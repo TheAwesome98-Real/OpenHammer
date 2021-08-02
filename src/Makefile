@@ -1,4 +1,10 @@
-CC=gcc
+CC=g++
+CPPFLAGS=$(shell wx-config --cxxflags --libs) -DOPENHAMMER_VERSION
 
-build:
-$(cc) *.c
+build: main.o
+	@echo "Building"
+	$(CC) -o openhammer main.o
+	
+clean:
+	@echo "Cleaning up"
+	rm *.o openhammer
