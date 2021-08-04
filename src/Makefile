@@ -1,5 +1,5 @@
 CPP=g++
-CPPFLAGS=$(shell wx-config --cxxflags --libs) -DOPENHAMMER_VERSION
+CPPFLAGS=$(shell wx-config --cxxflags --libs) -DOPENHAMMER_VERSION="std::string(\"v0.0.1a\")"
 
 build: main.o
 	@echo "Building"
