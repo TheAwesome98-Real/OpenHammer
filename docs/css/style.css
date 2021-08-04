@@ -1,0 +1,14 @@
+* {
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  background: linear-gradient(90deg, #120080, #3482d4);
+  margin: 0;
+}
+body {
+  background: #bebebe;
+  margin: 8px;
+  padding: 0;
+}
