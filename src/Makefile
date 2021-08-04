@@ -1,9 +1,9 @@
-CPP=g++
-CPPFLAGS=$(shell wx-config --cxxflags --libs) -DOPENHAMMER_VERSION="std::string(\"v0.0.1a\")"
+CXXFLAGS=$(shell wx-config --cxxflags) -DOPENHAMMER_VERSION="std::string(\"v0.0.1a\")"
+CXXLIBS=$(shell wx-config --libs)
 
 build: main.o
 	@echo "Building"
-	$(CPP) $(CPPFLAGS) -o openhammer main.o
+	$(CXX) $(CXXFLAGS) -o openhammer main.o $(CXXLIBS)
 	
 clean:
 	@echo "Cleaning up"
